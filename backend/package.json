@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "start": "node --watch --loader @esbuild-kit/esm-loader --no-warnings src/index.ts"
+  },
+  "dependencies": {
+    "@fastify/awilix": "3.1.0",
+    "@fastify/cors": "^8.3.0",
+    "awilix": "8.0.1",
+    "fastify": "4.18.0",
+    "lodash-es": "4.17.21",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "4.17.7"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig-defaults.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "typeRoots": ["src/types", "node_modules/@types"]
+  },
+  "include": ["src/**/*.*", "fastify/server.ts"]
+}

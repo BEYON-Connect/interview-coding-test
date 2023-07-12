@@ -1,4 +1,5 @@
 import sqlite from "sqlite3";
+import { migrations } from "./schema.js";
 
 export const query = async (
   database: sqlite.Database,
@@ -68,25 +69,3 @@ const applyMigrations = async (
 
   return version;
 };
-
-const migrations = [
-  [
-    `
-CREATE TABLE IF NOT EXISTS "Tasks" (
-  "Id" INTEGER NOT NULL,
-  "Title" TEXT NOT NULL,
-  "Deadline" DATETIME NOT NULL,
-  "Description"	TEXT NULL,
-  "IsCompleted" BOOLEAN NOT NULL DEFAULT FALSE,
-  PRIMARY KEY("Id" AUTOINCREMENT)
-);
-    `,
-    `
-INSERT INTO "Tasks" (Title, Deadline, Description)
-VALUES
-  ("Finish elevator pitch", "2023-11-23T18:00:00.000Z", "We need to create an elevator pitch for our product"),
-  ("Implement high priority features", "2024-01-12T17:00:00.000Z", "We have high priority features that our product department is asking for. We need to finish these features"),
-  ("Prepare for monthly status meeting", "2023-12-24T8:00:00.000Z", "We need to prepare for monthly status meeting")
-    `,
-  ],
-];

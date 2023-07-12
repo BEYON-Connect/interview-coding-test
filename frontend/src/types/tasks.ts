@@ -1,6 +1,7 @@
 export type TaskItem = {
-  Id: number;
-  Title: string;
-  Deadline: Date;
-  IsCompleted: boolean;
+  id: number;
+  title: string;
+  deadline: Date;
+  description: string;
+  isCompleted: boolean;
 };

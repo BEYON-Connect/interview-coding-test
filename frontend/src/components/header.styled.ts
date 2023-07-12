@@ -17,6 +17,12 @@ export const NavigationContainer = styled("nav", {
   display: "flex",
   flexDirection: "row",
   gap: "16px",
+  "a.active": {
+    color: "#E54D3C",
+  },
+  a: {
+    color: "#012E5D",
+  },
 });
 
 export const Divider = styled("hr", {

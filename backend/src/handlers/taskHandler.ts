@@ -6,7 +6,7 @@ const listTasks: RouteHandlerMethod = async (request, reply) => {
 
   const tasks = await query(
     database,
-    "SELECT Id, Title, Deadline, IsCompleted FROM Tasks"
+    "SELECT Id, Title, Deadline, Description, IsCompleted FROM Tasks"
   );
 
   return reply.send(tasks);

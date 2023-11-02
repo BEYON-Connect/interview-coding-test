@@ -4,18 +4,18 @@ import {
   StyledDialogButtonContainer,
   StyledDialogContent,
   StyledDialogOverlay,
-} from "./create-task-dialog.styled";
+} from "../../../components/dialog.styled";
 
-export const CreateTaskDialog = () => {
+export const CreateEncryptedNoteDialog = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger>Create task</Dialog.Trigger>
+      <Dialog.Trigger>Create new encrypted note</Dialog.Trigger>
       <Dialog.Portal>
         <StyledDialogOverlay />
         <StyledDialogContent>
-          <Dialog.Title>Create new task</Dialog.Title>
+          <Dialog.Title>Create new encrypted note</Dialog.Title>
           <form onSubmit={() => setOpen(false)}>
             <StyledDialogButtonContainer>
               <button onClick={() => setOpen(false)}>Cancel</button>

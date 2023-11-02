@@ -1,6 +1,6 @@
+import { SubtitleContainer } from "../../../components/content.styled";
 import { TaskItem } from "../../../types/tasks";
 import { CreateTaskDialog } from "./create-task-dialog";
-import { TaskTableTitle } from "./task-table.styled";
 
 type TaskTableProps = {
   tasks: TaskItem[];
@@ -15,10 +15,10 @@ export const TaskTable = ({
 }: TaskTableProps) => {
   return (
     <div>
-      <TaskTableTitle>
+      <SubtitleContainer>
         <h2>{title}</h2>
         {showCreateButton && <CreateTaskDialog />}
-      </TaskTableTitle>
+      </SubtitleContainer>
       {tasks.length === 0 ? (
         <p>No tasks to display</p>
       ) : (

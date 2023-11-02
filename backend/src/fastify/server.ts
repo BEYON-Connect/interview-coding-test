@@ -21,17 +21,7 @@ export const startServer = async (
   });
 
   await fastify.register(cors, {
-    origin: (origin, callback) => {
-      const hostname = new URL(origin!).hostname;
-
-      if (hostname === "localhost") {
-        callback(null, true);
-
-        return;
-      }
-
-      callback(new Error("Not allowed"), false);
-    },
+    origin: true,
   });
 
   fastify.register(fastifyAwilixPlugin);

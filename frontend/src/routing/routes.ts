@@ -4,7 +4,11 @@ export const AppRoutes = {
     path: "/",
   },
   taskManager: {
-    name: "Task manager",
+    name: "Task Manager",
     path: "/task-manager",
+  },
+  encryptedNotes: {
+    name: "Encrypted Notes",
+    path: "/encrypted-notes",
   },
 };

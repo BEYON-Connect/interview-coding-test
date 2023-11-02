@@ -18,3 +18,11 @@ export const Spinner = styled("div", {
   animation: `${spin} 2s linear infinite`,
   margin: "auto",
 });
+
+export const SubtitleContainer = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+  gap: "32px",
+  paddingBottom: "16px",
+  alignItems: "center",
+});

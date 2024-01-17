@@ -4,7 +4,7 @@ import {
   StyledDialogButtonContainer,
   StyledDialogContent,
   StyledDialogOverlay,
-} from "./create-task-dialog.styled";
+} from "../../../components/dialog.styled";
 
 export const CreateTaskDialog = () => {
   const [open, setOpen] = useState(false);

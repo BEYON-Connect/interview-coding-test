@@ -1,10 +1,12 @@
 # Introduction
 
+## Full-Stack Developer
+
 This repository contains a minimal web application solution that will be the basis for the Beyon Connect developer interview coding assessment.
 The solution consists of a frontend and backend project, where the frontend is a React application and the backend is a NodeJS web API.
 Both projects are written in TypeScript.
 
-I as part of the in-person interview, you will be asked to extend the solution with a new features.
+As part of the in-person interview, you will be asked to extend the solution with a new features.
 The features will be communicated to you during the interview and will be include required implementations in both the frontend and backend projects.
 
 It is highly recommended that you clone this repository and get the solution running locally before the interview.
@@ -12,10 +14,24 @@ This will ensure that you are able to start coding immediately when the intervie
 You should also familiarize yourself with the codebase and the technologies used.
 This will help you understand the existing code and make it easier to implement the new features.
 
+## DevOps Engineer
+
+This repository is also used for the technical assessment of DevOps Engineer candidates. 
+For this assessment, you will not be asked to extend the solution, but instead you will be given common DevOps tasks for this sort of system.
+
+In preparation for the DevOps Engineer technical interview, you should ensure that you have Docker installed and a functional local kubernetes cluster deployed on your machine (see Pre-requisites for details).
+
 # Pre-requisites
+
+## Full-Stack Developer
 
 - [NodeJS](https://nodejs.org/en/) (v18.15.0)
 - [NPM](https://www.npmjs.com/) (v9.5.0)
+
+## DevOps Engineer
+
+- [Docker](https://www.docker.com/)
+- Functional Kubernetes Cluster (we suggest either through [Docker Desktop](https://docs.docker.com/desktop/kubernetes/), or [minikube](https://minikube.sigs.k8s.io/docs/start))
 
 # Backend
 
